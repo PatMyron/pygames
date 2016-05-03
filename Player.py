@@ -13,7 +13,11 @@ class Player(pygame.sprite.Sprite):
 		self.sprite = 0
                 self.image = pygame.image.load("media/mario/mario-" + str(self.sprite + 1) +  ".png")
 		self.rect = self.image.get_rect()
-		self.rect.y = 364
+		self.rect.y = 365
+		self.rect.x = 450
+		self.x = 0
+		self.jumping = False
+		self.falling = False		
 
 		# keep original image to limit resize errors
 		self.orig_image = self.image
@@ -24,10 +28,19 @@ class Player(pygame.sprite.Sprite):
 
 		keys = pygame.key.get_pressed()
 		if keys[K_RIGHT]:
-		    self.rect.x += 5
+			self.x += 5
 		if keys[K_LEFT]:
-		    self.rect.x -= 5
-		if keys[K_UP]:
-		    self.rect.y -=5
-		if keys[K_DOWN]:
-		    self.rect.y += 5
+			self.x -= 5
+		if keys[K_UP] and not self.jumping and not self.falling:
+			self.jumping = True
+
+		if self.jumping:
+			self.rect.y -= 5
+			if self.rect.y < 210:
+				self.jumping = False
+				self.falling = True
+				
+		if self.falling:
+			self.rect.y += 5
+			if self.rect.y == 365:
+				self.falling = False

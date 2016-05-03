@@ -11,13 +11,13 @@ class GameSpace:
 		pass
         def main(self):
                 pygame.init()
-                self.size = self.width, self.height = 1366, 444
+                self.size = self.width, self.height = 900, 444
                 self.black = 0, 0, 0
                 self.screen = pygame.display.set_mode(self.size)
 
 		self.player = Player(self)
 		self.enemy = Enemy(self)		
-		self.bg = Background(self)
+		self.bg = Background(self, self.player)
 		
 		go = LoopingCall(self.ticker)
 		go.start(0.01)
