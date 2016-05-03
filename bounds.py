@@ -8,7 +8,7 @@ def check(x, y):
 		return False
 
 	if (top > 365):
-		if ((left > 2200 and right < 2263) or (left > 2746 and right < 2843) or	(left >	4890 and right < 4950)): # gaps
+		if ((left > 2200 and right < 2263) or (left > 2746 and right < 2843) or	(left >	4888 and right < 4950)): # gaps
 			pass
                 else: # ground
                         return False
@@ -134,6 +134,8 @@ def check(x, y):
                         
                         
 	# stairs
+	
+	# 1st staircase
         if (right > 4280) and (left < 4407):
                 if (bottom > 365) and (top < 397):
 #                        print '1 1 stair'
@@ -152,8 +154,59 @@ def check(x, y):
                         return False
 	
 
+	# 3rd staircase
+        if (right > 4727) and (left < 4888):
+                if (bottom > 365) and (top < 397):
+#                        print '1 1 stair'
+                        return False
+        if (right > 4759) and (left < 4888):
+                if (bottom > 333) and (top < 397):
+#                        print '1 2 stair'
+                        return False
+        if (right > 4791) and (left < 4888):
+                if (bottom > 300) and (top < 397):
+#                        print '1 3 stair'
+                        return False
+        if (right > 4823) and (left < 4888):
+                if (bottom > 269) and (top < 397):
+#                        print '1 4 stair'
+                        return False
 	
 	
+	
+	# 5th staircase
+        if (right > 5784) and (left < 6073):
+                if (bottom > 365) and (top < 397):
+#                        print '1 1 stair'
+                        return False
+        if (right > 5816) and (left < 6073):
+                if (bottom > 333) and (top < 397):
+#                        print '1 2 stair'
+                        return False
+        if (right > 5848) and (left < 6073):
+                if (bottom > 300) and (top < 397):
+#                        print '1 3 stair'
+                        return False
+        if (right > 5880) and (left < 6073):
+                if (bottom > 269) and (top < 397):
+#                        print '1 4 stair'
+                        return False
+        if (right > 5912) and (left < 6073):
+                if (bottom > 237) and (top < 397):
+#                        print '1 1 stair'
+                        return False
+        if (right > 5944) and (left < 6073):
+                if (bottom > 205) and (top < 397):
+#                        print '1 2 stair'
+                        return False
+        if (right > 5976) and (left < 6073):
+                if (bottom > 173) and (top < 397):
+#                        print '1 3 stair'
+                        return False
+        if (right > 6008) and (left < 6073):
+                if (bottom > 140) and (top < 397):
+#                        print '1 4 stair'
+                        return False
 	
 	
 	
