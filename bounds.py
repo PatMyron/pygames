@@ -129,6 +129,10 @@ def check(x, y):
 #                        print '17th block'
                         return False
                         
+        if (right > 6329) and (left < 6362):
+                if (bottom > 364) and (top < 397):
+#                        print 'flag block'
+                        return False
                         
                         
                         
