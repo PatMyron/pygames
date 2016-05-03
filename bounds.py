@@ -6,11 +6,11 @@ def check(x, y):
 	
 	if left < 0 or right > 6345:  # beginning and flag
 		return False
+
 	elif (top > 365):
-		print 'somewhere down low'
-		print 'l: ' + str(left)
-		print 'r: ' + str(right)	
-		if ((left < 2200) or (right > 2263 and left < 2746) or (right > 2843 and left < 4890) or (right > 4950)):  # ground  
-			return False
+		if ((left > 2200 and right < 2263) or (left > 2746 and right < 2843) or	(left >	4890 and right < 4950)):
+                        return True
+                else:
+                        return False
 	else:
 		return True
