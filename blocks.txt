@@ -1,0 +1,36 @@
+blocks are 33x33
+5x1 row was 161x33
+1st gap  63
+2nd gap  95
+3rd gap  63
+# draw over them to see if correct?? (blinking)?
+
+#  top-left corner -- maybe followed by bottom right
+
+# all pipes
+1st pipe 	(890,  333) (952, 397)
+2nd pipe	(1209, 301) (1273, 397)
+3rd pipe 	(1464, 270) (1528, 396)
+4th pipe	(1816, 270) (1878, 398)
+5th pipe	(5208, 333) (5269, 397)
+6th pipe	(5719, 333) (5782, 397)
+
+# all gaps
+1st gap 2200 - 2263
+2nd gap 2746 - 2843
+3rd gap 4890 - 4950
+
+# flag
+flag - 6345
+
+# stairs
+1 - x (4280 - 4407) ymax 268
+2 - x (4470 - 4599) ymax 268
+3 - x (4727 - 4888) ymax 268
+4 - x (4950 - 5080) ymax 268
+5 - x (5784 - 6073) ymax 140
+
+1st block       (505, 270)  (537, 300)
+1st row         (633, 270)  (793, 301)
+block above     (697, 142)  (729, 173)
+3x1 block row   (2456, 267) (2552, 300)
