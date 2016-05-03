@@ -46,6 +46,7 @@ class Player(pygame.sprite.Sprite):
 
 		if not self.jumping and check(self.x, self.rect.y + 5): # gravity
 			self.rect.y += 5
+			self.falling = True
 
 		if not self.jumping and not check(self.x, self.rect.y + 5):
 			self.falling = False
