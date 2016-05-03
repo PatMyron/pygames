@@ -32,7 +32,7 @@ class GameSpace:
 		self.screen.fill(self.black)
 		self.screen.blit(self.bg.image, self.bg.rect)
 		self.screen.blit(self.player.image, self.player.rect)
-		self.screen.blit(self.enemy.image, self.enemy.rect)
+#		self.screen.blit(self.enemy.image, self.enemy.rect)
 		pygame.display.flip()
 
 

@@ -128,4 +128,11 @@ def check(x, y):
                 if (bottom > 270) and (top < 300):
 #                        print '17th block'
                         return False
+                        
+                        
+                        
+                        
+                        
+	# stairs
+	
 	return True
