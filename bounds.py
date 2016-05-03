@@ -134,5 +134,27 @@ def check(x, y):
                         
                         
 	# stairs
+        if (right > 4280) and (left < 4407):
+                if (bottom > 365) and (top < 397):
+#                        print '1 1 stair'
+                        return False
+        if (right > 4312) and (left < 4407):
+                if (bottom > 333) and (top < 397):
+#                        print '1 2 stair'
+                        return False
+        if (right > 4344) and (left < 4407):
+                if (bottom > 300) and (top < 397):
+#                        print '1 3 stair'
+                        return False
+        if (right > 4376) and (left < 4407):
+                if (bottom > 269) and (top < 397):
+#                        print '1 4 stair'
+                        return False
+	
+
+	
+	
+	
+	
 	
 	return True
