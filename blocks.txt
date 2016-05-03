@@ -1,10 +1,11 @@
+# random notes
 blocks are 33x33
 5x1 row was 161x33
-1st gap  63
-2nd gap  95
-3rd gap  63
+1st gap  63, 2nd gap  95, 3rd gap  63
+
 # draw over them to see if correct?? (blinking)?
 
+# all of the items that matter below
 #  top-left corner -- maybe followed by bottom right
 
 # all pipes
@@ -30,6 +31,7 @@ flag - 6345
 4 - x (4950 - 5080) ymax 268
 5 - x (5784 - 6073) ymax 140
 
+# all blocks
 1st block       (505, 270)  (537, 300)
 1st row         (633, 270)  (793, 300)
 block above     (697, 140)  (729, 173)
