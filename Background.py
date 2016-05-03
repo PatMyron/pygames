@@ -12,7 +12,7 @@ class Background(pygame.sprite.Sprite):
                 # keep original image to limit resize errors
                 self.orig_image = self.image
         def tick(self):
-		self.rect.x = -1 * self.player.x
+		self.rect.x = -1 * self.player.x + 450
 
 
 # 396-397 px down to ground

@@ -2,10 +2,8 @@ from pygame import mixer
 from pygame.locals import *
 import pygame
 import math
-def rot_center(image, rect, angle):
-        rot_image = pygame.transform.rotate(image, angle)
-        rot_rect = rot_image.get_rect(center=rect.center)
-        return rot_image,rot_rect
+from bounds import check
+
 class Player(pygame.sprite.Sprite):
 	def __init__(self, gs=None):
 		pygame.sprite.Sprite.__init__(self)
@@ -15,7 +13,7 @@ class Player(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		self.rect.y = 365
 		self.rect.x = 450
-		self.x = 0
+		self.x = 450
 		self.jumping = False
 		self.falling = False		
 
@@ -27,20 +25,27 @@ class Player(pygame.sprite.Sprite):
                 self.image = pygame.image.load("media/mario/mario-" + str(self.sprite + 1) +  ".png")
 
 		keys = pygame.key.get_pressed()
-		if keys[K_RIGHT]:
+		if keys[K_RIGHT] and check(self.x + 5, self.rect.y):
 			self.x += 5
-		if keys[K_LEFT]:
+		if keys[K_LEFT] and check(self.x - 5, self.rect.y):
 			self.x -= 5
 		if keys[K_UP] and not self.jumping and not self.falling:
 			self.jumping = True
+			self.jumpsLeft = 31
 
 		if self.jumping:
-			self.rect.y -= 5
-			if self.rect.y < 210:
+			if self.jumpsLeft == 0 or not check(self.x, self.rect.y - 5):
 				self.jumping = False
 				self.falling = True
-				
-		if self.falling:
+			else:
+				self.rect.y -= 5
+				self.jumpsLeft = self.jumpsLeft - 1
+
+#		print 'x: ' + str(self.x)
+#		print 'y: ' + str(self.rect.y)
+
+		if not self.jumping and check(self.x, self.rect.y + 5): # gravity
 			self.rect.y += 5
-			if self.rect.y == 365:
-				self.falling = False
+
+		if not self.jumping and not check(self.x, self.rect.y + 5):
+			self.falling = False
