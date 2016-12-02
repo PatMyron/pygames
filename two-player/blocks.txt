@@ -1,0 +1,52 @@
+# random notes
+blocks are 33x33
+5x1 row was 161x33
+1st gap  63, 2nd gap  95, 3rd gap  63
+
+# draw over them to see if correct?? (blinking)?
+
+# all of the items that matter below
+#  top-left corner -- maybe followed by bottom right
+
+# all pipes
+1st pipe 	(890,  333) (952, 397)
+2nd pipe	(1209, 301) (1273, 397)
+3rd pipe 	(1464, 270) (1528, 396)
+4th pipe	(1816, 270) (1878, 398)
+5th pipe	(5208, 333) (5269, 397)
+6th pipe	(5719, 333) (5782, 397)
+
+# all gaps
+1st gap 2200 - 2263
+2nd gap 2746 - 2843
+3rd gap 4890 - 4950
+
+# flag
+flag - 6345
+
+# stairs
+1 - x (4280 - 4407) ymax 268
+2 - x (4470 - 4599) ymax 268
+3 - x (4727 - 4888) ymax 268
+4 - x (4950 - 5080) ymax 268
+5 - x (5784 - 6073) ymax 140
+
+# all blocks
+1st block       (505, 270)  (537, 300)
+1st row         (633, 270)  (793, 300)
+block above     (697, 140)  (729, 173)
+3x1 block row   (2456, 270) (2552, 300)
+long row above	(2551, 140) (2807, 173)
+next high row	(2905, 140) (3032, 173)
+lil 1x1 block	(3000, 270) (3032, 300)
+2x1 row		(3191, 270) (3255, 300)
+1st ?		(3384, 270) (3415, 300)
+2nd ?		(3480, 270) (3511, 300)
+3rd ?		(3576, 270) (3607, 300)
+high ?		(3480, 140) (3511, 173)
+1x1 low		(3768, 270) (3801, 300)
+high row	(3864, 140) (3960, 173)
+? row high	(4086, 140) (4215, 173)
+2x1 mid		(4119, 270) (4183, 300)
+last row	(5368, 270) (5496, 300)
+flag block      (6329, 364) (6362, 397)
