@@ -40,100 +40,40 @@ def check(x, y):
 	[4086, 140, 4215, 173],
 	[4119, 270, 4183, 300],
 	[5368, 270, 5496, 300],
-	[6329, 364, 6362, 397]
+	[6329, 364, 6362, 397],
+	# 1st staircase
+	[4280, 365, 4407, 397],
+	[4312, 333, 4407, 397],
+	[4344, 300, 4407, 397],
+	[4376, 269, 4407, 397],
+	# 2nd staircase
+	[4470, 365, 4599, 397],
+	[4470, 333, 4567, 397],
+	[4470, 300, 4535, 397],
+	[4470, 269, 4503, 397],
+	# 3rd staircase
+	[4727, 365, 4888, 397],
+	[4759, 333, 4888, 397],
+	[4791, 300, 4888, 397],
+	[4823, 269, 4888, 397],
+	# 4th staircase
+	[4950, 365, 5080, 397],
+	[4950, 333, 5048, 397],
+	[4950, 300, 5016, 397],
+	[4950, 269, 4984, 397],
+	# 5th staircase
+	[5784, 365, 6073, 397],
+	[5816, 333, 6073, 397],
+	[5848, 300, 6073, 397],
+	[5880, 269, 6073, 397],
+	[5912, 237, 6073, 397],
+	[5944, 205, 6073, 397],
+	[5976, 173, 6073, 397],
+	[6008, 140, 6073, 397]
 	]
 	for array in arrays:
 		if (right > array[0]) and (left < array[2]):
 			if (bottom > array[1]) and (top < array[3]):
 				return False
-	
-
-	# stairs
-	
-	# 1st staircase
-	if (right > 4280) and (left < 4407):
-			if (bottom > 365) and (top < 397):
-					return False
-	if (right > 4312) and (left < 4407):
-			if (bottom > 333) and (top < 397):
-					return False
-	if (right > 4344) and (left < 4407):
-			if (bottom > 300) and (top < 397):
-					return False
-	if (right > 4376) and (left < 4407):
-			if (bottom > 269) and (top < 397):
-					return False
-	
-
-	# 3rd staircase
-	if (right > 4727) and (left < 4888):
-			if (bottom > 365) and (top < 397):
-					return False
-	if (right > 4759) and (left < 4888):
-			if (bottom > 333) and (top < 397):
-					return False
-	if (right > 4791) and (left < 4888):
-			if (bottom > 300) and (top < 397):
-					return False
-	if (right > 4823) and (left < 4888):
-			if (bottom > 269) and (top < 397):
-					return False
-	
-	
-	# 5th staircase
-	if (right > 5784) and (left < 6073):
-			if (bottom > 365) and (top < 397):
-					return False
-	if (right > 5816) and (left < 6073):
-			if (bottom > 333) and (top < 397):
-					return False
-	if (right > 5848) and (left < 6073):
-			if (bottom > 300) and (top < 397):
-					return False
-	if (right > 5880) and (left < 6073):
-			if (bottom > 269) and (top < 397):
-					return False
-	if (right > 5912) and (left < 6073):
-			if (bottom > 237) and (top < 397):
-					return False
-	if (right > 5944) and (left < 6073):
-			if (bottom > 205) and (top < 397):
-					return False
-	if (right > 5976) and (left < 6073):
-			if (bottom > 173) and (top < 397):
-					return False
-	if (right > 6008) and (left < 6073):
-			if (bottom > 140) and (top < 397):
-					return False
-	
-	
-	# 2nd staircase
-	if (right > 4470) and (left < 4599):
-			if (bottom > 365) and (top < 397):
-					return False
-	if (right > 4470) and (left < 4567):
-			if (bottom > 333) and (top < 397):
-					return False
-	if (right > 4470) and (left < 4535):
-			if (bottom > 300) and (top < 397):
-					return False
-	if (right > 4470) and (left < 4503):
-			if (bottom > 269) and (top < 397):
-					return False
-
-						
-	# 4th staircase
-	if (right > 4950) and (left < 5080):
-			if (bottom > 365) and (top < 397):
-					return False
-	if (right > 4950) and (left < 5048):
-			if (bottom > 333) and (top < 397):
-					return False
-	if (right > 4950) and (left < 5016):
-			if (bottom > 300) and (top < 397):
-					return False
-	if (right > 4950) and (left < 4984):
-			if (bottom > 269) and (top < 397):
-					return False
 	
 	return True
