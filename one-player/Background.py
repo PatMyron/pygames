@@ -12,6 +12,4 @@ class Background(pygame.sprite.Sprite):
         self.rect.y = 0
 
     def tick(self):
-        self.rect.x = -1 * self.player.x + 450
-
-# 396-397 px down to ground
+        self.rect.x = 450 - self.player.x
