@@ -9,16 +9,16 @@ import json
 
 class GameSpace:
 	# Pass connection and character
-		def __init__(self, connection, character):
+        def __init__(self, connection, character):
 		self.connection = connection
 		self.character = character
 
 	# initialize the game space
-		def main(self):
-				pygame.init()
-				self.size = self.width, self.height = 900, 444
-				self.black = 0, 0, 0
-				self.screen = pygame.display.set_mode(self.size)
+        def main(self):
+                pygame.init()
+                self.size = self.width, self.height = 900, 444
+                self.black = 0, 0, 0
+                self.screen = pygame.display.set_mode(self.size)
 
 		self.player = Player(self, self.character)
 		self.enemy = Enemy(self, self.character)		
@@ -49,8 +49,8 @@ class GameSpace:
 				return
 			else:
 				self.screen.blit(pygame.image.load('media/mariano.png'), self.player.rect)
-								pygame.display.flip()
-								return
+                                pygame.display.flip()
+                                return
 		
 		# check for moves
 		self.p1 = self.player.tick()
@@ -86,6 +86,6 @@ class GameSpace:
 		else:
 			self.connection.transport.write(json.dumps(self.var))
 
-
+     
 
 

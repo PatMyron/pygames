@@ -14,7 +14,7 @@ SERVER_PORT = 40086
 
 # Connection factory
 class ServerConnFactory(ClientFactory):
-    def buildProtocol(self):
+    def buildProtocol(self, addr):
         return ServerConnection()
 
 # Create Connection to server
@@ -36,7 +36,7 @@ class ServerConnection(Protocol):
         self.transport.write(json.dumps([450, 365, 450, 365]))
 
 
-    def connectionlost(self):
+    def connectionlost(self, reason):
         print "lost connection"
         reactor.stop()
 

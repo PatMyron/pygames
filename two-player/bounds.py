@@ -7,8 +7,8 @@ def check(x, y):
 	if left < 0 or right > 6345:  # beginning and flag
 		return False
 
-	if top > 365:
-		if (left > 2200 and right < 2263) or (left > 2746 and right < 2843) or	(left >	4888 and right < 4950): # gaps
+	if (top > 365):
+		if ((left > 2200 and right < 2263) or (left > 2746 and right < 2843) or	(left >	4888 and right < 4950)): # gaps
 			pass
 		else: # ground
 			return False
