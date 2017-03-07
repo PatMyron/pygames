@@ -11,9 +11,6 @@ class Background(pygame.sprite.Sprite):
         self.rect.x = 0
         self.rect.y = 0
 
-        # keep original image to limit resize errors
-        self.orig_image = self.image
-
     def tick(self):
         self.rect.x = -1 * self.player.x + 450
 
