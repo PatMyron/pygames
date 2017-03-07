@@ -44,7 +44,7 @@ class Player(pygame.sprite.Sprite):
 				self.falling = True
 			else:
 				self.rect.y -= 5
-				self.jumpsLeft = self.jumpsLeft - 1
+				self.jumpsLeft -= 1
 
 		# Gravity
 		if not self.jumping and check(self.x, self.rect.y + 5): # gravity

@@ -39,7 +39,7 @@ class Player(pygame.sprite.Sprite):
 				self.falling = True
 			else:
 				self.rect.y -= 5
-				self.jumpsLeft = self.jumpsLeft - 1
+				self.jumpsLeft -= 1
 
 #		print 'x: ' + str(self.x)
 #		print 'y: ' + str(self.rect.y)
