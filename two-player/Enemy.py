@@ -16,8 +16,6 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.y = 364
 
         self.x = 450
-        # keep original image to limit resize errors
-        self.orig_image = self.image
 
         # tick and pass parameters
 
