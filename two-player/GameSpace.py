@@ -16,7 +16,6 @@ class GameSpace:
         # initialize the game space
         pygame.init()
         self.size = self.width, self.height = 900, 444
-        self.black = 0, 0, 0
         self.screen = pygame.display.set_mode(self.size)
 
         self.player = Player(self, self.character)
@@ -55,7 +54,7 @@ class GameSpace:
         self.bg.tick()
 
         # blit screen and wait
-        self.screen.fill(self.black)
+        self.screen.fill((0, 0, 0))  # black
         self.screen.blit(self.bg.image, self.bg.rect)
         self.screen.blit(self.player.image, self.player.rect)
         self.screen.blit(self.enemy.image, self.enemy.rect)
