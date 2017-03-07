@@ -3,7 +3,6 @@ from twisted.internet import reactor
 from twisted.internet.task import LoopingCall
 
 from Background import Background
-from Enemy import Enemy
 from Player import Player
 
 
@@ -15,7 +14,6 @@ class GameSpace:
         self.screen = pygame.display.set_mode(self.size)
 
         self.player = Player(self)
-        self.enemy = Enemy(self)
         self.bg = Background(self, self.player)
 
         go = LoopingCall(self.ticker)
@@ -25,7 +23,6 @@ class GameSpace:
     def ticker(self):
         pygame.event.get()
         self.player.tick()
-        self.enemy.tick()
         self.bg.tick()
 
         self.screen.fill(self.black)
