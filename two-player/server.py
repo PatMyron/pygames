@@ -7,6 +7,7 @@ from GameSpace import GameSpace
 SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 40086
 
+
 # Create connection to client
 class MyConnection(LineReceiver):
     def __init__(self):
@@ -16,7 +17,6 @@ class MyConnection(LineReceiver):
         # Store data and tick
         self.gs.receive(data)
         self.gs.ticker()
-
 
     def connectionMade(self):
         # Instantiate gamespace
@@ -29,6 +29,7 @@ class MyConnection(LineReceiver):
     def connectionLost(self):
         print "lost connection"
         reactor.stop()
+
 
 # Connection Factory
 class MyConnectionFactory(Factory):
