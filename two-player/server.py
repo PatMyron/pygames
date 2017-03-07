@@ -26,7 +26,7 @@ class MyConnection(LineReceiver):
         # self.go.start(0.01)
         print 'made connection to '+SERVER_HOST+' port '+str(SERVER_PORT)
 
-    def connectionLost(self):
+    def connectionLost(self, reason):
         print "lost connection"
         reactor.stop()
 
