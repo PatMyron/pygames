@@ -1,4 +1,6 @@
 import pygame
+
+
 class Enemy(pygame.sprite.Sprite):
         def __init__(self, gs, character):
 		if character == "mario":
