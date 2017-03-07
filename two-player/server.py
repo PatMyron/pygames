@@ -37,7 +37,7 @@ class MyConnection(LineReceiver):
 
 # Connection Factory
 class MyConnectionFactory(Factory):
-    def buildProtocol(self, addr):
+    def buildProtocol(self):
         return MyConnection()
 
 if __name__ == '__main__':
