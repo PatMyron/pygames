@@ -9,9 +9,6 @@ from Player import Player
 
 class GameSpace:
     def __init__(self):
-        pass
-
-    def main(self):
         pygame.init()
         self.size = self.width, self.height = 900, 444
         self.black = 0, 0, 0
@@ -40,4 +37,3 @@ class GameSpace:
 
 if __name__ == '__main__':
     gs = GameSpace()
-    gs.main()
