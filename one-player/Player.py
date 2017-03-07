@@ -17,9 +17,6 @@ class Player(pygame.sprite.Sprite):
         self.jumping = False
         self.falling = False
 
-        # keep original image to limit resize errors
-        self.orig_image = self.image
-
     def tick(self):
         self.sprite = (self.sprite + 1) % 3  # incrementing sprite
         self.image = pygame.image.load("media/mario/mario-" + str(self.sprite + 1) + ".png")
