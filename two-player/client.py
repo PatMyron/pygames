@@ -27,9 +27,6 @@ class ServerConnection(Protocol):
     def connectionMade(self):
         # instantiate gamespace
         self.gs = GameSpace(self, "luigi")
-        self.gs.main()
-        # self.go = LoopingCall(self.gs.ticker)
-        # self.go.start(0.01)
 
         print 'made connection to '+SERVER_HOST+' port '+str(SERVER_PORT)
         self.transport.write(json.dumps([450, 365, 450, 365]))

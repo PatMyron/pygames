@@ -13,8 +13,7 @@ class GameSpace:
         self.connection = connection
         self.character = character
 
-    # initialize the game space
-    def main(self):
+        # initialize the game space
         pygame.init()
         self.size = self.width, self.height = 900, 444
         self.black = 0, 0, 0

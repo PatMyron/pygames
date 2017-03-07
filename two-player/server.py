@@ -21,9 +21,6 @@ class MyConnection(LineReceiver):
     def connectionMade(self):
         # Instantiate gamespace
         self.gs = GameSpace(self, "mario")
-        self.gs.main()
-        # self.go = LoopingCall(self.gs.ticker)
-        # self.go.start(0.01)
         print 'made connection to '+SERVER_HOST+' port '+str(SERVER_PORT)
 
     def connectionLost(self, reason):
