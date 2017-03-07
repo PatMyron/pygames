@@ -1,11 +1,11 @@
-from datetime import datetime
-from twisted.internet.task import LoopingCall
-from twisted.internet import reactor
+import json
+
 import pygame
+
+from Background import Background
 from Enemy import Enemy
 from Player import Player
-from Background import Background
-import json
+
 
 class GameSpace:
 	# Pass connection and character

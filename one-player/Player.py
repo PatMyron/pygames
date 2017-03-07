@@ -1,8 +1,8 @@
-from pygame import mixer
-from pygame.locals import *
 import pygame
-import math
+from pygame.locals import *
+
 from bounds import check
+
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self, gs=None):

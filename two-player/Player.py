@@ -1,8 +1,8 @@
-from pygame import mixer
-from pygame.locals import *
 import pygame
-import math
+from pygame.locals import *
+
 from bounds import check
+
 
 # Create player being controlled
 class Player(pygame.sprite.Sprite):

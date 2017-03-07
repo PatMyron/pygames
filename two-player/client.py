@@ -1,13 +1,10 @@
-import os
-from twisted.internet.protocol import Factory
-from twisted.internet.protocol import Protocol
-from twisted.protocols.basic import LineReceiver
-from twisted.internet.tcp import Port
+import json
+
 from twisted.internet import reactor
 from twisted.internet.protocol import ClientFactory
+from twisted.internet.protocol import Protocol
+
 from GameSpace import GameSpace
-from twisted.internet.task import LoopingCall
-import json
 
 SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 40086

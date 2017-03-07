@@ -1,10 +1,11 @@
-from datetime import datetime
-from twisted.internet.task import LoopingCall
-from twisted.internet import reactor
 import pygame
+from twisted.internet import reactor
+from twisted.internet.task import LoopingCall
+
+from Background import Background
 from Enemy import Enemy
 from Player import Player
-from Background import Background
+
 
 class GameSpace:
         def __init__(self):
