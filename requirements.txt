@@ -1,0 +1,2 @@
+Twisted==16.6.0
+pygame==1.9.2b6
