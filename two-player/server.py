@@ -21,10 +21,10 @@ class MyConnection(LineReceiver):
     def connectionMade(self):
         # Instantiate gamespace
         self.gs = GameSpace(self, "mario")
-        print 'made connection to '+SERVER_HOST+' port '+str(SERVER_PORT)
+        print('made connection to '+SERVER_HOST+' port '+str(SERVER_PORT))
 
     def connectionLost(self, reason):
-        print "lost connection"
+        print("lost connection")
         reactor.stop()
 
 

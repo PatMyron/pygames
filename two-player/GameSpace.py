@@ -67,12 +67,12 @@ class GameSpace:
         # Check for win condition
         if self.p1[0] >= 6328:
             if self.character == "mario":
-                print "here"
+                print("here")
                 self.screen.blit(pygame.image.load('media/mariano.png'), self.player.rect)
                 pygame.display.flip()
                 self.connection.transport.write(json.dumps([]))
             else:
-                print "here"
+                print("here")
                 self.screen.blit(pygame.image.load('media/lugado.png'), self.player.rect)
                 pygame.display.flip()
                 self.connection.transport.write(json.dumps([]))

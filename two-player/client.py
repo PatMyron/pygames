@@ -28,11 +28,11 @@ class ServerConnection(Protocol):
         # instantiate gamespace
         self.gs = GameSpace(self, "luigi")
 
-        print 'made connection to '+SERVER_HOST+' port '+str(SERVER_PORT)
+        print('made connection to '+SERVER_HOST+' port '+str(SERVER_PORT))
         self.transport.write(json.dumps([450, 365, 450, 365]))
 
     def connectionlost(self, reason):
-        print "lost connection"
+        print("lost connection")
         reactor.stop()
 
 if __name__ == '__main__':
