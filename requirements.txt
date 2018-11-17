@@ -1,2 +1,2 @@
 pygame==1.9.4
-Twisted==18.4.0
+Twisted==18.9.0
