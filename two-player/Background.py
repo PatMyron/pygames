@@ -6,7 +6,7 @@ class Background(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.gs = gs
         self.player = player
-        self.image = pygame.image.load("media/level1zoomed.png")
+        self.image = pygame.image.load("../media/level1zoomed.png")
         self.rect = self.image.get_rect()
         self.rect.x = 0
         self.rect.y = 0

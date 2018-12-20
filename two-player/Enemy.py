@@ -10,7 +10,7 @@ class Enemy(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.gs = gs
         self.sprite = 0
-        self.image = pygame.image.load("media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
+        self.image = pygame.image.load("../media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
         self.rect = self.image.get_rect()
         self.rect.x = 450
         self.rect.y = 364
@@ -25,7 +25,7 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.x = self.x + 450 - p1[0]
 
         self.sprite = (self.sprite + 1) % 3  # incrementing sprite
-        self.image = pygame.image.load("media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
+        self.image = pygame.image.load("../media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
 
         arr = [self.x, self.rect.y]
         return arr

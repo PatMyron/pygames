@@ -40,11 +40,11 @@ class GameSpace:
         # Check for winner and blit win message
         if len(self.received) == 0:
             if self.character == "mario":
-                self.screen.blit(pygame.image.load('media/lugado.png'), self.player.rect)
+                self.screen.blit(pygame.image.load('../media/lugado.png'), self.player.rect)
                 pygame.display.flip()
                 return
             else:
-                self.screen.blit(pygame.image.load('media/mariano.png'), self.player.rect)
+                self.screen.blit(pygame.image.load('../media/mariano.png'), self.player.rect)
                 pygame.display.flip()
                 return
 
@@ -68,12 +68,12 @@ class GameSpace:
         if self.p1[0] >= 6328:
             if self.character == "mario":
                 print("here")
-                self.screen.blit(pygame.image.load('media/mariano.png'), self.player.rect)
+                self.screen.blit(pygame.image.load('../media/mariano.png'), self.player.rect)
                 pygame.display.flip()
                 self.connection.transport.write(json.dumps([]))
             else:
                 print("here")
-                self.screen.blit(pygame.image.load('media/lugado.png'), self.player.rect)
+                self.screen.blit(pygame.image.load('../media/lugado.png'), self.player.rect)
                 pygame.display.flip()
                 self.connection.transport.write(json.dumps([]))
 

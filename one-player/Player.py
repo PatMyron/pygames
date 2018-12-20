@@ -9,7 +9,7 @@ class Player(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.gs = gs
         self.sprite = 0
-        self.image = pygame.image.load("media/mario/mario-" + str(self.sprite + 1) + ".png")
+        self.image = pygame.image.load("../media/mario/mario-" + str(self.sprite + 1) + ".png")
         self.rect = self.image.get_rect()
         self.rect.y = 365
         self.rect.x = 450
@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
 
     def tick(self):
         self.sprite = (self.sprite + 1) % 3  # incrementing sprite
-        self.image = pygame.image.load("media/mario/mario-" + str(self.sprite + 1) + ".png")
+        self.image = pygame.image.load("../media/mario/mario-" + str(self.sprite + 1) + ".png")
 
         keys = pygame.key.get_pressed()
         if keys[K_RIGHT] and check(self.x + 5, self.rect.y):

@@ -11,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         self.chr = character
         self.gs = gs
         self.sprite = 0
-        self.image = pygame.image.load("media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
+        self.image = pygame.image.load("../media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")
         self.rect = self.image.get_rect()
         self.rect.y = 365
         self.rect.x = 450
@@ -24,7 +24,7 @@ class Player(pygame.sprite.Sprite):
         self.sprite = (self.sprite + 1) % 3  # incrementing sprite
 
         self.image = pygame.image.load(
-            "media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")  # Key Presses
+            "../media/" + self.chr + "/" + self.chr + "-" + str(self.sprite + 1) + ".png")  # Key Presses
         keys = pygame.key.get_pressed()
         if keys[K_RIGHT] and check(self.x + 5, self.rect.y):
             self.x += 5
