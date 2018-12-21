@@ -12,7 +12,7 @@ class GameSpace:
         self.size = self.width, self.height = 900, 444
         self.screen = pygame.display.set_mode(self.size)
 
-        self.player = Player(self)
+        self.player = Player(self, "mario")
         self.bg = Background(self, self.player)
 
         go = LoopingCall(self.ticker)
