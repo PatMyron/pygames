@@ -1,5 +1,5 @@
 # Super Mario Bros Racing
-2 Player Mario Racing Game made with the PyGame and Twisted libraries
+Mario Racing Game made with the PyGame and Twisted libraries
 
 ### Required libraries for playing
 
@@ -7,8 +7,8 @@
 - PyGame
 
 ### How to start
-    "python server.py"
-    "python client.py"
+    python server.py
+    python client.py
 
 
 ### How to play
