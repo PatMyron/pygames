@@ -1,6 +1,9 @@
 import json
 
 import pygame
+import sys
+
+sys.path.append('../one-player')
 
 from Background import Background
 from Enemy import Enemy
