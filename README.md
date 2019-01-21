@@ -4,6 +4,8 @@
 # Killer Queen
 <img src="https://media.giphy.com/media/xWpN9PJcb2scYAoZCo/giphy.gif" alt="game recording" width="60%" height="auto">
 
+---
+
 ### Required libraries
 
 - Twisted 
