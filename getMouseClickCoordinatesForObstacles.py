@@ -7,5 +7,6 @@ def on_click(x, y, button, pressed):
     else:
         print(",", x, ",", y, "],")
 
+
 with mouse.Listener(on_click=on_click) as listener:
     listener.join()
