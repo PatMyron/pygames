@@ -1,4 +1,6 @@
 # Super Mario Bros
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPatMyron%2Fpygames.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPatMyron%2Fpygames?ref=badge_shield)
+
 <img src="https://media.giphy.com/media/13RuaUi7s3XBfO/giphy.gif" alt="Super Mario blooper GIF" width="30%" height="auto">
 
 # Killer Queen
@@ -16,3 +18,7 @@
 
 ### How to play
 Use the arrow keys to move left, right, and jump.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPatMyron%2Fpygames.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPatMyron%2Fpygames?ref=badge_large)
